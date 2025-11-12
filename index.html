@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>one-page-skeleton</title>
+  </head>
+  <body>
+    <header class="hero">
+      <img src="/vite.svg" alt="Logo" class="logo" />
+      <h1>Mon Activité</h1>
+      <p class="subtitle">Bienvenue sur mon site vitrine ! Découvrez nos services et notre expertise.</p>
+    </header>
+    <div class="main-nav-wrapper">
+      <nav class="main-nav">
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <label for="theme-select" style="font-weight:500; margin-left:2rem;">Thème :</label>
+        <select id="theme-select" style="padding:0.3rem 0.7rem; border-radius:6px; border:1px solid var(--color-border); margin-left:0.5rem;">
+          <option value="default">Classique</option>
+          <option value="alt">Sombre</option>
+        </select>
+      </nav>
+    </div>
+  <main>
+      <section id="about" class="about snap-section">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="À propos" />
+        </div>
+        <div class="about-content">
+          <h2>À propos</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam eros, a facilisis enim leo nec urna. Mauris euismod, sapien eu commodo cursus, enim urna facilisis enim, euismod euismod enim urna euismod.</p>
+        </div>
+      </section>
+      <section id="services" class="services snap-section">
+        <h2>Services</h2>
+        <div class="service-list">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Service 1" />
+            <h3>Conseil</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Service 2" />
+            <h3>Développement</h3>
+            <p>Consectetur adipiscing elit. Sed euismod urna eu tincidunt.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&q=80" alt="Service 3" />
+            <h3>Support</h3>
+            <p>Sed euismod urna eu tincidunt, nisi nisl aliquam eros.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact snap-section">
+        <h2>Contact</h2>
+        <div class="contact-content">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Contact" />
+          <div>
+            <p>Email : contact@example.com</p>
+            <p>Téléphone : 01 23 45 67 89</p>
+            <p>Adresse : 123 rue du Lorem, 75000 Paris</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <small>&copy; 2025 Mon Activité. Tous droits réservés.</small>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      const themeSelect = document.getElementById('theme-select');
+      themeSelect.addEventListener('change', function() {
+        if (themeSelect.value === 'alt') {
+          document.body.setAttribute('data-theme', 'alt');
+        } else {
+          document.body.removeAttribute('data-theme');
+        }
+      });
+    </script>
+  </body>
+</html>
