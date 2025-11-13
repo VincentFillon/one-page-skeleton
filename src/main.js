@@ -2,6 +2,7 @@
 import './style.css';
 import './scroll.js';
 import './theme.js';
+import './gallery.js';
 
 // Responsive menu toggle
 const navToggle = document.querySelector('.nav-toggle');
