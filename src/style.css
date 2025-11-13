@@ -234,7 +234,7 @@ main {
 }
 .about-content {
   flex: 2 1 400px;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .services {
@@ -242,7 +242,7 @@ main {
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
   margin-bottom: 2rem;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 .service-list {
   display: flex;
@@ -278,7 +278,7 @@ main {
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
   margin-bottom: 2rem;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 .contact-content {
   display: flex;
@@ -335,7 +335,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5rem; /* Pour compenser le menu sticky */
+  padding: 5rem 2rem 2rem;
 }
 
 h1 {
